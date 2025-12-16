@@ -62,3 +62,4 @@ lib/
 !**/.yarn/releases
 !**/.yarn/sdks
 !**/.yarn/versions
+plugin/tsconfig.tsbuildinfo
