@@ -5,7 +5,7 @@ public class FacebookAppDelegate: ExpoAppDelegateSubscriber {
   public func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
     ApplicationDelegate.shared.application(
       application,
-      didFinishLaunchingWithOptions: launchOptions
+      didFinishLaunchingWithOptions: launchOptions as? [String: Any]
     )
     return true
   }
@@ -14,8 +14,7 @@ public class FacebookAppDelegate: ExpoAppDelegateSubscriber {
     return ApplicationDelegate.shared.application(
       application,
       open: url,
-      sourceApplication: options[UIApplication.OpenURLOptionsKey.sourceApplication] as? String,
-      annotation: options[UIApplication.OpenURLOptionsKey.annotation]
+      options: options
     )
   }
 }
