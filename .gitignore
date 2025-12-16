@@ -63,3 +63,4 @@ lib/
 !**/.yarn/sdks
 !**/.yarn/versions
 plugin/tsconfig.tsbuildinfo
+package-lock.json
