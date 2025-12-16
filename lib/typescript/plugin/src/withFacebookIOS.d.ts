@@ -13,3 +13,4 @@ export declare function setFacebookApplicationQuerySchemes(config: ConfigProps, 
 export declare const withUserTrackingPermission: ConfigPlugin<{
     iosUserTrackingPermission?: string | false;
 } | void>;
+//# sourceMappingURL=withFacebookIOS.d.ts.map
